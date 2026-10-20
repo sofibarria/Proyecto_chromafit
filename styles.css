@@ -608,6 +608,15 @@ h1, h2, h3, h4 {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+    .chat-widget-wrapper { position: fixed; bottom: 24px; right: 24px; z-index: 9999; }
+.chat-toggle-btn { width: 60px; height: 60px; border-radius: 50%; background: var(--primary-500); color: #000; border: none; font-size: 24px; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+.chat-box { width: 320px; position: absolute; bottom: 75px; right: 0; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.chat-header { display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: var(--primary-500); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+.chat-body { display: flex; flex-direction: column; gap: 10px; max-height: 250px; overflow-y: auto; font-size: 0.9rem; }
+.bot-msg { background: rgba(255,255,255,0.05); padding: 8px 12px; border-radius: 8px; color: var(--text-secondary); }
+.chat-options { display: flex; flex-direction: column; gap: 6px; margin-top: 6px; }
+.chat-opt-btn { background: rgba(var(--primary-rgb), 0.1); border: 1px solid rgba(var(--primary-rgb), 0.3); color: var(--primary-500); padding: 8px; border-radius: 8px; cursor: pointer; text-align: left; font-size: 0.85srem; transition: 0.2s; }
+.chat-opt-btn:hover { background: rgba(var(--primary-rgb), 0.2); }
 }
 .map-section { padding: 80px 0; background: var(--bg-secondary); }
 .map-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; align-items: center; }
