@@ -1,4 +1,0 @@
-.map-section { padding: 80px 0; background: var(--bg-secondary); }
-.map-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; align-items: center; }
-.map-container-frame { height: 350px; width: 100%; border-radius: 16px; overflow: hidden; }
-@media (max-width: 768px) { .map-grid { grid-template-columns: 1fr; } }
